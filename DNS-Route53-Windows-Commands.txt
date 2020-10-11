@@ -1,0 +1,42 @@
+Root Server 
+https://www.iana.org/domains/root/servers
+
+nslookup -debug avtechusa.com
+
+$ nslookup
+> set querytype=ns
+> google.com
+Server:         127.0.0.1
+Address:        127.0.0.1#53
+
+Non-authoritative answer:
+google.com      nameserver = ns3.google.com.
+google.com      nameserver = ns4.google.com.
+google.com      nameserver = ns1.google.com.
+google.com      nameserver = ns2.google.com.
+
+Authoritative answers can be found from:
+ns1.google.com  internet address = 216.239.32.10
+
+nslookup www.google.com ns1.google.com
+
+$ nslookup
+> set querytype=ns
+> google.com
+Server:         127.0.0.1
+Address:        127.0.0.1#53
+
+Non-authoritative answer:
+google.com      nameserver = ns3.google.com.
+google.com      nameserver = ns4.google.com.
+google.com      nameserver = ns1.google.com.
+google.com      nameserver = ns2.google.com.
+
+Authoritative answers can be found from:
+ns1.google.com  internet address = 216.239.32.10.
+
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
+
+https://aws.amazon.com/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-using-cloudformer.html
