@@ -1,0 +1,4 @@
+https://aws.amazon.com/s3/storage-classes/
+
+aws s3 presign s3://name/test.index
+
