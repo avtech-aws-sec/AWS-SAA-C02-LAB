@@ -1,4 +1,5 @@
 sudo yum install mysql
+mysql -h dbhostname -u admin -p
 
 sudo yum update -y
 sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
